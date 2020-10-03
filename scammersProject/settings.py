@@ -58,7 +58,8 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
-    
+    "https://mazharrazmian.github.io",
+    "mazharrazmian.github.io",
 ]
 
 ROOT_URLCONF = 'scammersProject.urls'
