@@ -25,7 +25,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://scammers-backend.herokuapp.com/']
+ALLOWED_HOSTS = ['scammers-backend.herokuapp.com','127.0.0.1']
 
 AUTH_USER_MODEL = 'scammers.User'
 # Application definition
