@@ -1,0 +1,1 @@
+web: gunicorn scammersProject.wsgi --log-file -
