@@ -67,7 +67,7 @@ class ScammerDetailSerializer(serializers.ModelSerializer):
     class Meta:
         
         model = Scammer
-        fields = ['title', 'phone', 'address','details','image_urls']
+        fields = ['first_name','last_name','title', 'phone', 'address','details','image_urls']
         
         
     def get_image_url(self,obj):
@@ -110,5 +110,4 @@ class ScammerCreateSerializer(serializers.ModelSerializer):
             print(image_data)
             Images.objects.create(scammer=scammer, image=image_data)
          return scammer
-
 

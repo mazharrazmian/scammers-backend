@@ -46,9 +46,7 @@ class ScammerDetailAPIView(RetrieveAPIView):
 
 
 class ScammerUpdateAPIView(UpdateAPIView):
-    permission_classes = [
-        permissions.IsAuthenticated,
-    ]
+    
     queryset = Scammer.objects.all()
     serializer_class = ScammerDetailSerializer
 
@@ -142,3 +140,4 @@ class ScammersCountAPIView(APIView):
         scammers_count = Scammer.objects.count()
         content = {'scammers_count': scammers_count}
         return Response(content)
+
